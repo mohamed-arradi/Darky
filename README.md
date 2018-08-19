@@ -1,4 +1,4 @@
-# DarkModeSwitcher
+# Darky
 
 ![Image of DarkModeSwitcher](https://github.com/mohamed-arradi/DarkModeSwitcher/blob/master/images/appIcon.png)
 

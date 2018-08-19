@@ -34,8 +34,6 @@
 		19C71EB515BE5B30C5E17D4E /* Pods_DarkModeLauncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkModeLauncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		224BF27A96EDFCEA94837469 /* Pods-DarkMode Switcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkMode Switcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-DarkMode Switcher/Pods-DarkMode Switcher.release.xcconfig"; sourceTree = "<group>"; };
 		35B2D7F2CAF55F2D70ECA510 /* Pods-DarkMode Switcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkMode Switcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DarkMode Switcher/Pods-DarkMode Switcher.debug.xcconfig"; sourceTree = "<group>"; };
-		5BE9E3939CE64BDE31AD5A45 /* Pods-DarkModeLauncher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkModeLauncher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DarkModeLauncher/Pods-DarkModeLauncher.debug.xcconfig"; sourceTree = "<group>"; };
-		8F701256EFDD69DB999B213D /* Pods-DarkModeLauncher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkModeLauncher.release.xcconfig"; path = "Pods/Target Support Files/Pods-DarkModeLauncher/Pods-DarkModeLauncher.release.xcconfig"; sourceTree = "<group>"; };
 		A5482CCD43C505E6B7D3E28C /* Pods_DarkMode_Switcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkMode_Switcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5AE22520CF0A1200032F22 /* CreditsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsWindow.swift; sourceTree = "<group>"; };
 		EB84493F20CD0AF10031C2EE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -85,8 +83,6 @@
 			children = (
 				35B2D7F2CAF55F2D70ECA510 /* Pods-DarkMode Switcher.debug.xcconfig */,
 				224BF27A96EDFCEA94837469 /* Pods-DarkMode Switcher.release.xcconfig */,
-				5BE9E3939CE64BDE31AD5A45 /* Pods-DarkModeLauncher.debug.xcconfig */,
-				8F701256EFDD69DB999B213D /* Pods-DarkModeLauncher.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";

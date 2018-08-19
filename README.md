@@ -67,6 +67,12 @@ Icons:
 
 - https://www.iconfinder.com/vectorsquare
 
-## License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+### Support
+
+You like it ? help supporting this app by donating or contributing
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CK4Y594T6K5LL)

@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3549C56D020B31F43132D1DA /* Pods_DarkMode_Switcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5482CCD43C505E6B7D3E28C /* Pods_DarkMode_Switcher.framework */; };
+		EB5AE22620CF0A1200032F22 /* CreditsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5AE22520CF0A1200032F22 /* CreditsWindow.swift */; };
+		EBBB313220CE40E500780063 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBB313120CE40E400780063 /* MainMenu.xib */; };
+		EBBB313420CE415A00780063 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB313320CE415A00780063 /* StatusMenuController.swift */; };
+		EBBB313720CE417600780063 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBB313520CE417600780063 /* PreferencesWindow.xib */; };
+		EBBB313820CE417600780063 /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB313620CE417600780063 /* PreferencesWindow.swift */; };
+		EBBB313B20CE41B500780063 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB313A20CE41B500780063 /* StatusView.swift */; };
+		EBBB314020CE7AB800780063 /* AboutWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB313F20CE7AB800780063 /* AboutWindow.swift */; };
+		EBBB314220CE7ACA00780063 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBB314120CE7ACA00780063 /* AboutWindow.xib */; };
+		EBBB314420CEE74100780063 /* Bundle+BuildVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB314320CEE74100780063 /* Bundle+BuildVersion.swift */; };
+		EBBD38BC20CFA3570002A152 /* CreditsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBD38BB20CFA3570002A152 /* CreditsWindow.xib */; };
+		EBDAAE7320CBD48A00563F55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDAAE7220CBD48A00563F55 /* AppDelegate.swift */; };
+		EBDAAE7720CBD48C00563F55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDAAE7620CBD48C00563F55 /* Assets.xcassets */; };
+		EBDAAE8520CBD4CD00563F55 /* darkmodeParam.scpt in Resources */ = {isa = PBXBuildFile; fileRef = EBDAAE8320CBD4CD00563F55 /* darkmodeParam.scpt */; };
+		EBDAAE8620CBD4CD00563F55 /* darkmodeSwitcher.scpt in Resources */ = {isa = PBXBuildFile; fileRef = EBDAAE8420CBD4CD00563F55 /* darkmodeSwitcher.scpt */; };
+		EBDAAE8820CBDA7900563F55 /* AppleScriptHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDAAE8720CBDA7900563F55 /* AppleScriptHelper.swift */; };
+		EBDAAE9120CC390900563F55 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBDAAE9320CC390900563F55 /* Localizable.strings */; };
+		EBDAAE9620CC39D000563F55 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDAAE9520CC39D000563F55 /* String+Localized.swift */; };
+		EBDAAED120CCE46600563F55 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDAAED020CCE46600563F55 /* ServiceManagement.framework */; };
+		EBDAAED320CCE46E00563F55 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDAAED220CCE46E00563F55 /* Cocoa.framework */; };
+		EBDF03BB20E16F4A00B0CEEA /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF03B920E16F4900B0CEEA /* DarkMode.swift */; };
+		EBDF03BC20E16F4A00B0CEEA /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF03BA20E16F4900B0CEEA /* util.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19C71EB515BE5B30C5E17D4E /* Pods_DarkModeLauncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkModeLauncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		224BF27A96EDFCEA94837469 /* Pods-DarkMode Switcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkMode Switcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-DarkMode Switcher/Pods-DarkMode Switcher.release.xcconfig"; sourceTree = "<group>"; };
+		35B2D7F2CAF55F2D70ECA510 /* Pods-DarkMode Switcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkMode Switcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DarkMode Switcher/Pods-DarkMode Switcher.debug.xcconfig"; sourceTree = "<group>"; };
+		5BE9E3939CE64BDE31AD5A45 /* Pods-DarkModeLauncher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkModeLauncher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DarkModeLauncher/Pods-DarkModeLauncher.debug.xcconfig"; sourceTree = "<group>"; };
+		8F701256EFDD69DB999B213D /* Pods-DarkModeLauncher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkModeLauncher.release.xcconfig"; path = "Pods/Target Support Files/Pods-DarkModeLauncher/Pods-DarkModeLauncher.release.xcconfig"; sourceTree = "<group>"; };
+		A5482CCD43C505E6B7D3E28C /* Pods_DarkMode_Switcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkMode_Switcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5AE22520CF0A1200032F22 /* CreditsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsWindow.swift; sourceTree = "<group>"; };
+		EB84493F20CD0AF10031C2EE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EBBB313120CE40E400780063 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		EBBB313320CE415A00780063 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		EBBB313520CE417600780063 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		EBBB313620CE417600780063 /* PreferencesWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		EBBB313A20CE41B500780063 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		EBBB313E20CE738A00780063 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		EBBB313F20CE7AB800780063 /* AboutWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindow.swift; sourceTree = "<group>"; };
+		EBBB314120CE7ACA00780063 /* AboutWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
+		EBBB314320CEE74100780063 /* Bundle+BuildVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+BuildVersion.swift"; sourceTree = "<group>"; };
+		EBBD38BB20CFA3570002A152 /* CreditsWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditsWindow.xib; sourceTree = "<group>"; };
+		EBDAAE6F20CBD48A00563F55 /* DarkMode Switcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DarkMode Switcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBDAAE7220CBD48A00563F55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBDAAE7620CBD48C00563F55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBDAAE7B20CBD48C00563F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBDAAE8320CBD4CD00563F55 /* darkmodeParam.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = darkmodeParam.scpt; sourceTree = "<group>"; };
+		EBDAAE8420CBD4CD00563F55 /* darkmodeSwitcher.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = darkmodeSwitcher.scpt; sourceTree = "<group>"; };
+		EBDAAE8720CBDA7900563F55 /* AppleScriptHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleScriptHelper.swift; sourceTree = "<group>"; };
+		EBDAAE8A20CC1FD300563F55 /* DarkMode Switcher-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DarkMode Switcher-Bridging-Header.h"; sourceTree = "<group>"; };
+		EBDAAE9220CC390900563F55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EBDAAE9420CC398400563F55 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EBDAAE9520CC39D000563F55 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		EBDAAED020CCE46600563F55 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		EBDAAED220CCE46E00563F55 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EBDC1533212959CC00D22C2E /* DarkMode Switcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DarkMode Switcher.entitlements"; sourceTree = "<group>"; };
+		EBDF03B920E16F4900B0CEEA /* DarkMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
+		EBDF03BA20E16F4900B0CEEA /* util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBDAAE6C20CBD48A00563F55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDAAED320CCE46E00563F55 /* Cocoa.framework in Frameworks */,
+				EBDAAED120CCE46600563F55 /* ServiceManagement.framework in Frameworks */,
+				3549C56D020B31F43132D1DA /* Pods_DarkMode_Switcher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61CF30F8BF8CBE550098D4D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35B2D7F2CAF55F2D70ECA510 /* Pods-DarkMode Switcher.debug.xcconfig */,
+				224BF27A96EDFCEA94837469 /* Pods-DarkMode Switcher.release.xcconfig */,
+				5BE9E3939CE64BDE31AD5A45 /* Pods-DarkModeLauncher.debug.xcconfig */,
+				8F701256EFDD69DB999B213D /* Pods-DarkModeLauncher.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBBB313920CE41A200780063 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB313120CE40E400780063 /* MainMenu.xib */,
+				EBBB313620CE417600780063 /* PreferencesWindow.swift */,
+				EBBB313520CE417600780063 /* PreferencesWindow.xib */,
+				EBBB313A20CE41B500780063 /* StatusView.swift */,
+				EBBB313F20CE7AB800780063 /* AboutWindow.swift */,
+				EBBB314120CE7ACA00780063 /* AboutWindow.xib */,
+				EB5AE22520CF0A1200032F22 /* CreditsWindow.swift */,
+				EBBD38BB20CFA3570002A152 /* CreditsWindow.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBDAAE6620CBD48900563F55 = {
+			isa = PBXGroup;
+			children = (
+				EBDAAE7120CBD48A00563F55 /* DarkMode Switcher */,
+				EBDAAE7020CBD48A00563F55 /* Products */,
+				EBDAAECF20CCE46500563F55 /* Frameworks */,
+				61CF30F8BF8CBE550098D4D6 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EBDAAE7020CBD48A00563F55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBDAAE6F20CBD48A00563F55 /* DarkMode Switcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBDAAE7120CBD48A00563F55 /* DarkMode Switcher */ = {
+			isa = PBXGroup;
+			children = (
+				EBDC1533212959CC00D22C2E /* DarkMode Switcher.entitlements */,
+				EBDC1534212974DC00D22C2E /* Model */,
+				EBBB313920CE41A200780063 /* View */,
+				EBDAAED620CCE7F700563F55 /* Extension */,
+				EBDAAED520CCE7EB00563F55 /* Helper */,
+				EBDAAED420CCE7C700563F55 /* Controllers */,
+				EBDAAE7220CBD48A00563F55 /* AppDelegate.swift */,
+				EBDAAE7620CBD48C00563F55 /* Assets.xcassets */,
+				EBDAAE7B20CBD48C00563F55 /* Info.plist */,
+				EBDAAE8220CBD4A200563F55 /* SupportingFiles */,
+				EBDAAE9320CC390900563F55 /* Localizable.strings */,
+			);
+			path = "DarkMode Switcher";
+			sourceTree = "<group>";
+		};
+		EBDAAE8220CBD4A200563F55 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EBDAAE8A20CC1FD300563F55 /* DarkMode Switcher-Bridging-Header.h */,
+				EBDAAE8320CBD4CD00563F55 /* darkmodeParam.scpt */,
+				EBDAAE8420CBD4CD00563F55 /* darkmodeSwitcher.scpt */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		EBDAAECF20CCE46500563F55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB84493F20CD0AF10031C2EE /* StoreKit.framework */,
+				EBDAAED220CCE46E00563F55 /* Cocoa.framework */,
+				EBDAAED020CCE46600563F55 /* ServiceManagement.framework */,
+				A5482CCD43C505E6B7D3E28C /* Pods_DarkMode_Switcher.framework */,
+				19C71EB515BE5B30C5E17D4E /* Pods_DarkModeLauncher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBDAAED420CCE7C700563F55 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB313320CE415A00780063 /* StatusMenuController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EBDAAED520CCE7EB00563F55 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF03BA20E16F4900B0CEEA /* util.swift */,
+				EBDAAE8720CBDA7900563F55 /* AppleScriptHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		EBDAAED620CCE7F700563F55 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EBDAAE9520CC39D000563F55 /* String+Localized.swift */,
+				EBBB314320CEE74100780063 /* Bundle+BuildVersion.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EBDC1534212974DC00D22C2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF03B920E16F4900B0CEEA /* DarkMode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBDAAE6E20CBD48A00563F55 /* DarkMode Switcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBDAAE7F20CBD48C00563F55 /* Build configuration list for PBXNativeTarget "DarkMode Switcher" */;
+			buildPhases = (
+				839A62437B437AF45D5DCB69 /* [CP] Check Pods Manifest.lock */,
+				EBDAAE6B20CBD48A00563F55 /* Sources */,
+				EBDAAE6C20CBD48A00563F55 /* Frameworks */,
+				EBDAAE6D20CBD48A00563F55 /* Resources */,
+				9EF6E65CCF0E9E750A57A24C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DarkMode Switcher";
+			productName = "DarkMode Switcher";
+			productReference = EBDAAE6F20CBD48A00563F55 /* DarkMode Switcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBDAAE6720CBD48900563F55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Mohamed ARRADI";
+				TargetAttributes = {
+					EBDAAE6E20CBD48A00563F55 = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EBDAAE6A20CBD48900563F55 /* Build configuration list for PBXProject "DarkMode Switcher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				"en-GB",
+			);
+			mainGroup = EBDAAE6620CBD48900563F55;
+			productRefGroup = EBDAAE7020CBD48A00563F55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBDAAE6E20CBD48A00563F55 /* DarkMode Switcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBDAAE6D20CBD48A00563F55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBD38BC20CFA3570002A152 /* CreditsWindow.xib in Resources */,
+				EBBB314220CE7ACA00780063 /* AboutWindow.xib in Resources */,
+				EBBB313720CE417600780063 /* PreferencesWindow.xib in Resources */,
+				EBDAAE8520CBD4CD00563F55 /* darkmodeParam.scpt in Resources */,
+				EBDAAE8620CBD4CD00563F55 /* darkmodeSwitcher.scpt in Resources */,
+				EBDAAE7720CBD48C00563F55 /* Assets.xcassets in Resources */,
+				EBDAAE9120CC390900563F55 /* Localizable.strings in Resources */,
+				EBBB313220CE40E500780063 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		839A62437B437AF45D5DCB69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DarkMode Switcher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EF6E65CCF0E9E750A57A24C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DarkMode Switcher/Pods-DarkMode Switcher-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LoginServiceKit/LoginServiceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Magnet/Magnet.framework",
+				"${BUILT_PRODUCTS_DIR}/OGSwitch/OGSwitch.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LoginServiceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Magnet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OGSwitch.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DarkMode Switcher/Pods-DarkMode Switcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBDAAE6B20CBD48A00563F55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDF03BB20E16F4A00B0CEEA /* DarkMode.swift in Sources */,
+				EBBB313B20CE41B500780063 /* StatusView.swift in Sources */,
+				EBBB314020CE7AB800780063 /* AboutWindow.swift in Sources */,
+				EBDF03BC20E16F4A00B0CEEA /* util.swift in Sources */,
+				EBDAAE8820CBDA7900563F55 /* AppleScriptHelper.swift in Sources */,
+				EBBB313420CE415A00780063 /* StatusMenuController.swift in Sources */,
+				EBDAAE7320CBD48A00563F55 /* AppDelegate.swift in Sources */,
+				EBBB313820CE417600780063 /* PreferencesWindow.swift in Sources */,
+				EBDAAE9620CC39D000563F55 /* String+Localized.swift in Sources */,
+				EBBB314420CEE74100780063 /* Bundle+BuildVersion.swift in Sources */,
+				EB5AE22620CF0A1200032F22 /* CreditsWindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EBDAAE9320CC390900563F55 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBDAAE9220CC390900563F55 /* en */,
+				EBDAAE9420CC398400563F55 /* fr */,
+				EBBB313E20CE738A00780063 /* en-GB */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBDAAE7D20CBD48C00563F55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBDAAE7E20CBD48C00563F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EBDAAE8020CBD48C00563F55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35B2D7F2CAF55F2D70ECA510 /* Pods-DarkMode Switcher.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "DarkMode Switcher/DarkMode Switcher.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8JVK53ZY4C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "DarkMode Switcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DarkMode-Switcher";
+				PRODUCT_NAME = "DarkMode Switcher";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DarkMode Switcher/SupportingFiles/DarkMode Switcher-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		EBDAAE8120CBD48C00563F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 224BF27A96EDFCEA94837469 /* Pods-DarkMode Switcher.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "DarkMode Switcher/DarkMode Switcher.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8JVK53ZY4C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "DarkMode Switcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DarkMode-Switcher";
+				PRODUCT_NAME = "DarkMode Switcher";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DarkMode Switcher/SupportingFiles/DarkMode Switcher-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBDAAE6A20CBD48900563F55 /* Build configuration list for PBXProject "DarkMode Switcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBDAAE7D20CBD48C00563F55 /* Debug */,
+				EBDAAE7E20CBD48C00563F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBDAAE7F20CBD48C00563F55 /* Build configuration list for PBXNativeTarget "DarkMode Switcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBDAAE8020CBD48C00563F55 /* Debug */,
+				EBDAAE8120CBD48C00563F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBDAAE6720CBD48900563F55 /* Project object */;
+}

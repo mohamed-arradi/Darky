@@ -15,7 +15,7 @@ struct AppleScriptHelper {
         guard let scriptFilePath = bundle.path(forResource: scriptName, ofType: "scpt") else {
             return nil
         }
-   
+        
         let contentOfFile = try? String(contentsOfFile: scriptFilePath)
         
         guard let appleScript = contentOfFile else {
@@ -49,7 +49,7 @@ struct AppleScriptHelper {
         guard let appleScript = contentOfFile else {
             return nil
         }
-   
+        
         var error: NSDictionary?
         if let scriptObject = NSAppleScript(source: appleScript) {
             let output: NSAppleEventDescriptor = scriptObject.executeAndReturnError(
@@ -63,15 +63,5 @@ struct AppleScriptHelper {
         }
         
         return nil
-    }
-    
-    @discardableResult
-    func shell(_ args: String...) -> Int32 {
-        let task = Process()
-        task.launchPath = "/usr/bin/env"
-        task.arguments = args
-        task.launch()
-        task.waitUntilExit()
-        return task.terminationStatus
     }
 }

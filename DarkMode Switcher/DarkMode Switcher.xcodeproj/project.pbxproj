@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3549C56D020B31F43132D1DA /* Pods_DarkMode_Switcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5482CCD43C505E6B7D3E28C /* Pods_DarkMode_Switcher.framework */; };
 		EB5AE22620CF0A1200032F22 /* CreditsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5AE22520CF0A1200032F22 /* CreditsWindow.swift */; };
-		EB84494020CD0AF10031C2EE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB84493F20CD0AF10031C2EE /* StoreKit.framework */; };
 		EBBB313220CE40E500780063 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBB313120CE40E400780063 /* MainMenu.xib */; };
 		EBBB313420CE415A00780063 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBB313320CE415A00780063 /* StatusMenuController.swift */; };
 		EBBB313720CE417600780063 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBB313520CE417600780063 /* PreferencesWindow.xib */; };
@@ -74,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB84494020CD0AF10031C2EE /* StoreKit.framework in Frameworks */,
 				EBDAAED320CCE46E00563F55 /* Cocoa.framework in Frameworks */,
 				EBDAAED120CCE46600563F55 /* ServiceManagement.framework in Frameworks */,
 				3549C56D020B31F43132D1DA /* Pods_DarkMode_Switcher.framework in Frameworks */,
@@ -132,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				EBDC1533212959CC00D22C2E /* DarkMode Switcher.entitlements */,
+				EBDC1534212974DC00D22C2E /* Model */,
 				EBBB313920CE41A200780063 /* View */,
 				EBDAAED620CCE7F700563F55 /* Extension */,
 				EBDAAED520CCE7EB00563F55 /* Helper */,
@@ -178,7 +177,6 @@
 		EBDAAED520CCE7EB00563F55 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				EBDF03B920E16F4900B0CEEA /* DarkMode.swift */,
 				EBDF03BA20E16F4900B0CEEA /* util.swift */,
 				EBDAAE8720CBDA7900563F55 /* AppleScriptHelper.swift */,
 			);
@@ -192,6 +190,14 @@
 				EBBB314320CEE74100780063 /* Bundle+BuildVersion.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		EBDC1534212974DC00D22C2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF03B920E16F4900B0CEEA /* DarkMode.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,13 +482,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "DarkMode Switcher/DarkMode Switcher.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8JVK53ZY4C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/DarkMode\\ Switcher/DevMateKit",
 				);
 				INFOPLIST_FILE = "DarkMode Switcher/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -507,13 +512,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "DarkMode Switcher/DarkMode Switcher.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8JVK53ZY4C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/DarkMode\\ Switcher/DevMateKit",
 				);
 				INFOPLIST_FILE = "DarkMode Switcher/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

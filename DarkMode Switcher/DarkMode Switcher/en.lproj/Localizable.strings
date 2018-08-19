@@ -1,0 +1,27 @@
+/* 
+  Localizables.strings
+  DarkMode Switcher
+
+  Created by Mohamed Arradi on 6/9/18.
+  Copyright © 2018 Mohamed ARRADI. All rights reserved.
+*/
+
+"activate_dark_mode" = "Dark mode ON";
+"desactivate_dark_mode" = "Dark mode OFF";
+"enable_start_up_login" = "Start up when launch";
+"check_update" = "Check Update";
+"settings" = "Preferences...";
+"rate_app" = "Support Us ! Rate the App";
+"quit_app" = "Quit App";
+"about" = "About Theme Swapper";
+"update_available" = "An update is available";
+"update_information_text" = "Do you want to update it now ?";
+"cancel" = "Cancel";
+"ok" = "OK";
+"product_is_up_to_date" = "Your app is up to date";
+"credits" = "Credits";
+"credit_description" = "Main App Icon :%@.\n \nStatus Bar Icon : %@";
+"made_by" = "Made by";
+"accept_installation_folder" = "Allow";
+"installation_text" = "ThemeSwapper require your approval in order to install some components";
+"install_components_button_title" = "Install components";

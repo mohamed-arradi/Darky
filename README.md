@@ -2,6 +2,8 @@
 
 A small Mac OS App that allow you on Mac OS Mojave to switch between Dark Mode and Light Mode directly from a shortcut or via the status menu bar.
 
+You can directly download the App from the Release folder : https://github.com/mohamed-arradi/DarkModeSwitcher/Release/English
+
 ## Why this App can be useful ?
 
 In Mojave in order to change the dark mode status you need to open the system preference each time ! Why having a shortcut could not be more easier ?
@@ -23,6 +25,7 @@ pod 'OGSwitch'
 pod 'LoginServiceKit', :git => 'https://github.com/Clipy/LoginServiceKit.git'
 pod 'Magnet'
 ```
+
 ### Installing
 
 ```
@@ -32,25 +35,25 @@ And Run the project a small App will appear on top of the screen as per below
 
 ### Language handled
 
-- French & English only for now
+- French & English only for now.
+
+In order to change the language you need to change the project main language configuration before generating your App Build.
 
 ### Screenshots
 
 *Dark Mode Off*
 
-[Dark mode Off](https://ibb.co/cK9VVz)
+[Dark mode Off](images/DarkModeOff.png)
 
 *Dark Mode On*
 
-[Dark mode On](https://ibb.co/ectzqz)
+[Dark mode On](images/DarkModeOn.png)
 
 ### Contributing
 
 If you want to contribute to improve it, it will be with pleasure !
 
 ### Authors
-
-* **ARRADI-ALAOUI Mohamed** - *Initial work* - [mohamed-arradi](https://github.com/mohamed-arradi)
 
 See also the list of [contributors](https://github.com/mohamed-arradi/DarkModeSwitcher/contributors) who participated in this project.
 

@@ -28,7 +28,6 @@
 		EBDAAED120CCE46600563F55 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDAAED020CCE46600563F55 /* ServiceManagement.framework */; };
 		EBDAAED320CCE46E00563F55 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDAAED220CCE46E00563F55 /* Cocoa.framework */; };
 		EBDF03BB20E16F4A00B0CEEA /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF03B920E16F4900B0CEEA /* DarkMode.swift */; };
-		EBDF03BC20E16F4A00B0CEEA /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF03BA20E16F4900B0CEEA /* util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +64,6 @@
 		EBDAAED220CCE46E00563F55 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EBDC1533212959CC00D22C2E /* DarkMode Switcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DarkMode Switcher.entitlements"; sourceTree = "<group>"; };
 		EBDF03B920E16F4900B0CEEA /* DarkMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
-		EBDF03BA20E16F4900B0CEEA /* util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +175,6 @@
 		EBDAAED520CCE7EB00563F55 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				EBDF03BA20E16F4900B0CEEA /* util.swift */,
 				EBDAAE8720CBDA7900563F55 /* AppleScriptHelper.swift */,
 			);
 			path = Helper;
@@ -332,7 +329,6 @@
 				EBDF03BB20E16F4A00B0CEEA /* DarkMode.swift in Sources */,
 				EBBB313B20CE41B500780063 /* StatusView.swift in Sources */,
 				EBBB314020CE7AB800780063 /* AboutWindow.swift in Sources */,
-				EBDF03BC20E16F4A00B0CEEA /* util.swift in Sources */,
 				EBDAAE8820CBDA7900563F55 /* AppleScriptHelper.swift in Sources */,
 				EBBB313420CE415A00780063 /* StatusMenuController.swift in Sources */,
 				EBDAAE7320CBD48A00563F55 /* AppDelegate.swift in Sources */,

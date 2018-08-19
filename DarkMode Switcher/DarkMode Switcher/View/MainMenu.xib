@@ -14,9 +14,9 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="ThemeSwapper" customModuleProvider="target"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DarkMode_Switcher" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <customObject id="sS3-a3-GGc" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="ThemeSwapper" customModuleProvider="target">
+        <customObject id="sS3-a3-GGc" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="DarkMode_Switcher" customModuleProvider="target">
             <connections>
                 <outlet property="darkModeStatusView" destination="HhN-DY-IST" id="Q0s-Ag-Wur"/>
                 <outlet property="statusMenu" destination="qZp-Ad-uDX" id="XFG-js-aKj"/>
@@ -55,7 +55,7 @@
             </items>
             <point key="canvasLocation" x="-105" y="214.5"/>
         </menu>
-        <customView id="HhN-DY-IST" userLabel="DarkModeStatusView" customClass="StatusView" customModule="ThemeSwapper" customModuleProvider="target">
+        <customView id="HhN-DY-IST" userLabel="DarkModeStatusView" customClass="StatusView" customModule="DarkMode_Switcher" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="281" height="42"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -97,17 +97,6 @@
                         <action selector="activateDarkModeWithSender:" target="HhN-DY-IST" id="LtB-hB-dF4"/>
                     </connections>
                 </customView>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KAf-ea-9lU">
-                    <rect key="frame" x="14" y="3" width="253" height="32"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="s3i-1A-1tv">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="installComponentsWithSender:" target="HhN-DY-IST" id="07n-TK-k4G"/>
-                    </connections>
-                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="rNn-A5-VGx" firstAttribute="leading" secondItem="1qE-Oa-JK0" secondAttribute="trailing" constant="8" symbolic="YES" id="6aS-gJ-0SS"/>
@@ -117,7 +106,6 @@
                 <constraint firstAttribute="trailing" secondItem="rNn-A5-VGx" secondAttribute="trailing" constant="20" id="lPq-rT-QvK"/>
             </constraints>
             <connections>
-                <outlet property="actionButton" destination="KAf-ea-9lU" id="LBA-ju-PUD"/>
                 <outlet property="menu" destination="qZp-Ad-uDX" id="211-BK-y0T"/>
                 <outlet property="statusLabel" destination="1qE-Oa-JK0" id="Nmc-pn-G9X"/>
                 <outlet property="switchControl" destination="rNn-A5-VGx" id="jPB-Z0-cag"/>

@@ -13,7 +13,6 @@ class StatusView: NSView {
     
     @IBOutlet weak var switchControl: OGSwitch!
     @IBOutlet weak var statusLabel: NSTextField!
-    @IBOutlet weak var actionButton: NSButton!
     
     weak var statusMenu: NSMenu?
     
@@ -21,7 +20,6 @@ class StatusView: NSView {
         super.awakeFromNib()
         
         detectDarkMode()
-        self.actionButton.title = "install_components_button_title".localized
     }
     
     @objc func detectDarkMode() {
@@ -29,8 +27,6 @@ class StatusView: NSView {
         guard let darkMode =  AppleScriptHelper.getValueFrom(scriptName: "darkmodeParam") else {
             self.switchControl.isEnabled = false
             self.switchControl.isHidden = true
-            self.actionButton.isHidden = false
-            self.actionButton.isEnabled = true
             self.statusLabel.isHidden = true
             return
         }
@@ -38,8 +34,6 @@ class StatusView: NSView {
                 
                 self.switchControl.isEnabled = true
                 self.switchControl.isHidden = false
-                self.actionButton.isHidden = true
-                self.actionButton.isEnabled = false
                 self.statusLabel.isHidden = false
                 
                 let bool = darkMode.booleanValue
@@ -47,11 +41,6 @@ class StatusView: NSView {
                 self.switchControl.isOn = bool
                 self.statusLabel.stringValue = bool == true ? "activate_dark_mode".localized.appending(" (⌘+Ctrl+B)") : "desactivate_dark_mode".localized.appending(" (⌘+Ctrl+B)")
         }
-    }
-    
-    @IBAction func installComponents(sender: Any) {
-        
-        self.statusMenu?.cancelTracking()
     }
     
     @IBAction func activateDarkMode(sender: Any) {

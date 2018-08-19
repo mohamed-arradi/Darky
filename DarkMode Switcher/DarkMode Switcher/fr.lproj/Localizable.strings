@@ -9,13 +9,9 @@
 "activate_dark_mode" = "Dark mode activé";
 "desactivate_dark_mode" = "Dark mode désactivé";
 "enable_start_up_login" = "Démarrer au lancement de l'ordinateur";
-"check_update" = "Vérifier les mises à jour";
 "settings" = "Préférences";
-"rate_app" = "Noter l'application";
 "quit_app" = "Quitter";
-"about" = "À propos de Theme Swapper";
-"update_available" = "Une mise à jour est disponible";
-"update_information_text" = "Voulez-vous mettre à jour maintenant ?";
+"about" = "À propos de DarkMode Switcher";
 "cancel" = "Annuler";
 "ok" = "Oui";
 "product_is_up_to_date" = "Votre application est déjà à jour";
@@ -23,5 +19,3 @@
 "credit_description" = "Icone de l'application principale : %@.\n \n Icone de status: %@";
 "made_by" = "réalisée par";
 "accept_installation_folder" = "Autoriser";
-"installation_text" = "ThemeSwapper a besoin de votre autorisation dans le but d'installer des composants additionnels";
-"install_components_button_title" = "Installer les composants";

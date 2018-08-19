@@ -10,6 +10,12 @@ import Foundation
 
 struct AppleScriptHelper {
     
+    @discardableResult
+    static func runAppleScript(_ source: String) -> String? {
+        return NSAppleScript(source: source)?.executeAndReturnError(nil).stringValue
+    }
+
+    
     static func launchScript(scriptName: String?, bundle: Bundle = Bundle.main) -> Bool? {
         
         guard let scriptFilePath = bundle.path(forResource: scriptName, ofType: "scpt") else {

@@ -43,11 +43,11 @@ In order to change the language you need to change the project main language con
 
 *Dark Mode Off*
 
-[Dark mode Off](images/DarkModeOff.jpg)
+![Screenshot](images/DarkModeOff.jpg)
 
 *Dark Mode On*
 
-[Dark mode On](images/DarkModeOn.jpg)
+![Screenshot](images/DarkModeOn.jpg)
 
 ### Contributing
 

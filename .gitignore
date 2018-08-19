@@ -3,4 +3,5 @@ DarkMode Switcher/Pods/*
 Podfile.lock
 *.xcuserstate
 *.xcbkptlist
-*.app/Contents
+*/Contents
+*Pods/

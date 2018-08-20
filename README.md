@@ -6,6 +6,12 @@ A small Mac OS App that allow you on Mac OS Mojave to switch between Dark Mode a
 
 You can directly *Download and Install* the App directly from the release folder : https://github.com/mohamed-arradi/DarkModeSwitcher/tree/master/Release
 
+## How to download directly the App ?
+
+Just download the App zip file here : https://github.com/mohamed-arradi/DarkModeSwitcher/tree/master/Release
+
+Current Version: 0.1.0
+
 ## Why this App can be useful ?
 
 In Mojave in order to change the dark mode status you need to open the system preference each time ! Why having a shortcut could not be more easier ?
@@ -55,9 +61,10 @@ In order to change the language you need to change the project main language con
 
 If you want to contribute to improve it, it will be with pleasure !
 
-### Authors
+### TO DO
 
-See also the list of [contributors](https://github.com/mohamed-arradi/DarkModeSwitcher/contributors) who participated in this project.
+- Sunset / Sunrise automatically
+- Allow the user to set up a specific shortcut 
 
 ### Image Credits
 

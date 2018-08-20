@@ -4,8 +4,6 @@
 
 A small Mac OS App that allow you on Mac OS Mojave to switch between Dark Mode and Light Mode directly from a shortcut or via the status menu bar.
 
-You can directly *Download and Install* the App directly from the release folder : https://github.com/mohamed-arradi/DarkModeSwitcher/tree/master/Release
-
 ## How to download directly the App ?
 
 Just download the App zip file here : https://github.com/mohamed-arradi/DarkModeSwitcher/tree/master/Release

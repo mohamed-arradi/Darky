@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EBDAAE6E20CBD48A00563F55"
                BuildableName = "Darky.app"
-               BlueprintName = "Darky"
+               BlueprintName = "DarkMode Switcher"
                ReferencedContainer = "container:DarkMode Switcher.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,7 +34,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EBDAAE6E20CBD48A00563F55"
             BuildableName = "Darky.app"
-            BlueprintName = "Darky"
+            BlueprintName = "DarkMode Switcher"
             ReferencedContainer = "container:DarkMode Switcher.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -57,7 +57,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EBDAAE6E20CBD48A00563F55"
             BuildableName = "Darky.app"
-            BlueprintName = "Darky"
+            BlueprintName = "DarkMode Switcher"
             ReferencedContainer = "container:DarkMode Switcher.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -76,7 +76,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EBDAAE6E20CBD48A00563F55"
             BuildableName = "Darky.app"
-            BlueprintName = "Darky"
+            BlueprintName = "DarkMode Switcher"
             ReferencedContainer = "container:DarkMode Switcher.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

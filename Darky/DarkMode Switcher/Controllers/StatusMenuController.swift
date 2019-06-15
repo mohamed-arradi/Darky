@@ -18,10 +18,7 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate, NSAlertDelegate
     @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var darkModeStatusView: StatusView!
     
-    let mac_app_store_distribution = true
-
     var timer: Timer?
-    
     var statusMenuItem: NSMenuItem!
     
     lazy var preferencesWindow: PreferencesWindow = {
@@ -81,7 +78,6 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate, NSAlertDelegate
     
     @IBAction func preferencesClicked(_ sender: NSMenuItem) {
         preferencesWindow.showWindow(nil)
-        DarkMode.toggle()
     }
     
     @IBAction func quitClicked(_ sender: NSMenuItem) {

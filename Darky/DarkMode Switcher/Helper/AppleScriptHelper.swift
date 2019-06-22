@@ -15,7 +15,6 @@ struct AppleScriptHelper {
         return NSAppleScript(source: source)?.executeAndReturnError(nil).stringValue
     }
 
-    
     static func launchScript(scriptName: String?, bundle: Bundle = Bundle.main) -> Bool? {
         
         guard let scriptFilePath = bundle.path(forResource: scriptName, ofType: "scpt") else {

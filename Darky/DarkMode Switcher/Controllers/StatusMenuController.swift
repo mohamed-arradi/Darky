@@ -9,11 +9,7 @@
 import Cocoa
 import Magnet
 
-enum VersionError: Error {
-    case invalidResponse, invalidBundleInfo
-}
-
-class StatusMenuController: NSObject, PreferencesWindowDelegate, NSAlertDelegate {
+class StatusMenuController: NSObject, NSAlertDelegate {
     
     @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var darkModeStatusView: StatusView!
@@ -21,20 +17,8 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate, NSAlertDelegate
     var timer: Timer?
     var statusMenuItem: NSMenuItem!
     
-    lazy var preferencesWindow: PreferencesWindow = {
-        
-        let preference = PreferencesWindow()
-        preference.delegate = self
-        
-        return preference
-    }()
-    
     lazy var aboutView: AboutWindow = {
         return AboutWindow()
-    }()
-    
-    lazy var creditView: CreditsWindow = {
-        return CreditsWindow()
     }()
     
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
@@ -46,16 +30,12 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate, NSAlertDelegate
         icon?.isTemplate = true // best for dark mode
         statusItem.image = icon
         statusItem.menu = statusMenu
-        
-        statusMenu.item(at: 2)?.title = "settings".localized
-        statusMenu.item(at: 4)?.title = "about".localized
-        statusMenu.item(at: 6)?.title = "credits".localized
-        statusMenu.item(at: 8)?.title = "quit_app".localized
+
+        statusMenu.item(at: 2)?.title = "about".localized
+        statusMenu.item(at: 4)?.title = "quit_app".localized
         
         statusMenuItem = statusMenu.item(at: 0)
-        
         darkModeStatusView.statusMenu = statusMenu
-        
         statusMenuItem.view = darkModeStatusView
         
         updateSettings()
@@ -76,23 +56,11 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate, NSAlertDelegate
     
     // MARK: - IBAction
     
-    @IBAction func preferencesClicked(_ sender: NSMenuItem) {
-        preferencesWindow.showWindow(nil)
-    }
-    
     @IBAction func quitClicked(_ sender: NSMenuItem) {
         NSApplication.shared.terminate(self)
     }
     
     @IBAction func aboutAppClicked(_ sender: NSMenuItem) {
         aboutView.showWindow(nil)
-    }
-    
-    @IBAction func creditAppClicked(_ sender: NSMenuItem) {
-        creditView.showWindow(nil)
-    }
-    
-    func preferencesDidUpdate() {
-        updateSettings()
     }
 }

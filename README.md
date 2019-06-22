@@ -4,11 +4,7 @@
 
 A small Mac OS App that allow you on Mac OS Mojave to switch between Dark Mode and Light Mode directly from a shortcut or via the status menu bar.
 
-## How to download directly the App ?
-
-Just download the App zip file here : https://github.com/mohamed-arradi/DarkModeSwitcher/tree/master/Release
-
-Current Version: 0.1.0
+**Current Release Version: 1.0
 
 ## Why this App can be useful ?
 
@@ -18,15 +14,17 @@ This is why I build this tiny status bar app.
 
 ## Getting Started
 
-This is a MacOSX App build with xCode using Swift 4.0 and temporary exceptions in order to handle System Events and Preferences panels events
+This is a MacOSX App build with xCode using Swift 4.2 and temporary exceptions in order to handle System Events and Preferences panels events
 
-This App cannot be allowed on the Mac App Store due to the necessary temporary exceptions required.
+This App cannot be allowed on the Mac App Store due to the necessary temporary exceptions required. (Except if you manage to bribe some Apple Reviewers :))
+
+## How to download directly the App ?
+
+Just download the App zip file here : https://github.com/mohamed-arradi/DarkModeSwitcher/tree/master/Release
 
 ### Language handled
 
-- French & English only for now.
-
-In order to change the language you need to change the project main language configuration before generating your App Build.
+- **French & English ONLY for now. (Don't hesite to contribute to translate)
 
 ### Screenshots
 
@@ -55,6 +53,7 @@ If you want to contribute to improve it, it will be with pleasure !
 ** 1.0
 
  ** Improving UI
+ ** Added Missing Permissions for Mac OS Mojave
  ** Implemented keyboard shortcut 
 
 ** 0.1.0 

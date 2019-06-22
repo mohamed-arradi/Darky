@@ -22,23 +22,6 @@ This is a MacOSX App build with xCode using Swift 4.0 and temporary exceptions i
 
 This App cannot be allowed on the Mac App Store due to the necessary temporary exceptions required.
 
-### Prerequisites
-
-This project come along side some pod dependency
-
-```
-pod 'OGSwitch'
-pod 'LoginServiceKit', :git => 'https://github.com/Clipy/LoginServiceKit.git'
-pod 'Magnet'
-```
-
-### Installing
-
-```
-Pod install
-```
-And Run the project a small App will appear on top of the screen as per below
-
 ### Language handled
 
 - French & English only for now.
@@ -62,7 +45,17 @@ If you want to contribute to improve it, it will be with pleasure !
 ### TO DO
 
 - Sunset / Sunrise automatically
-- Allow the user to set up a specific shortcut 
+
+### HISTORY
+
+- 1.0
+
+ * Improving UI
+ * Implemented keyboard shortcut 
+
+- 0.1.0 
+
+ * Implemented Dark Mode Switch
 
 ### Image Credits
 

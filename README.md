@@ -34,9 +34,13 @@ In order to change the language you need to change the project main language con
 
 ![Screenshot](images/DarkModeOff.jpg)
 
+![Screenshot](images/DarkModeOffZoomed.png)
+
 *Dark Mode On*
 
 ![Screenshot](images/DarkModeOn.jpg)
+
+![Screenshot](images/DarkModeOnZoomed.png)
 
 ### Contributing
 
@@ -48,12 +52,12 @@ If you want to contribute to improve it, it will be with pleasure !
 
 ### HISTORY
 
-- 1.0
+** 1.0
 
- * Improving UI
- * Implemented keyboard shortcut 
+ ** Improving UI
+ ** Implemented keyboard shortcut 
 
-- 0.1.0 
+** 0.1.0 
 
  * Implemented Dark Mode Switch
 

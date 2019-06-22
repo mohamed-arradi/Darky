@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -14,9 +13,9 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DarkMode_Switcher" customModuleProvider="target"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Darky" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <customObject id="sS3-a3-GGc" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="DarkMode_Switcher" customModuleProvider="target">
+        <customObject id="sS3-a3-GGc" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="Darky" customModuleProvider="target">
             <connections>
                 <outlet property="darkModeStatusView" destination="HhN-DY-IST" id="Q0s-Ag-Wur"/>
                 <outlet property="statusMenu" destination="qZp-Ad-uDX" id="XFG-js-aKj"/>
@@ -26,12 +25,6 @@
             <items>
                 <menuItem title="Dark Mode" keyEquivalent="d" id="d2M-wS-o1T"/>
                 <menuItem isSeparatorItem="YES" id="FpG-qr-e8g"/>
-                <menuItem title="Parametres" id="gjQ-IK-ro7">
-                    <connections>
-                        <action selector="preferencesClicked:" target="sS3-a3-GGc" id="iUp-2D-yeF"/>
-                    </connections>
-                </menuItem>
-                <menuItem isSeparatorItem="YES" id="bI0-i6-jYp"/>
                 <menuItem title="About" id="m2r-0K-li3">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -39,13 +32,6 @@
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="qkH-MY-9iZ"/>
-                <menuItem title="Credits" id="pnf-Gm-YnB">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="creditAppClicked:" target="sS3-a3-GGc" id="krX-we-U5w"/>
-                    </connections>
-                </menuItem>
-                <menuItem isSeparatorItem="YES" id="xZb-Ls-7pI"/>
                 <menuItem title="Quit" id="k4N-2W-XAy">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -53,64 +39,95 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-105" y="214.5"/>
+            <point key="canvasLocation" x="-95" y="275"/>
         </menu>
-        <customView id="HhN-DY-IST" userLabel="DarkModeStatusView" customClass="StatusView" customModule="DarkMode_Switcher" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="281" height="42"/>
+        <customView id="HhN-DY-IST" userLabel="DarkModeStatusView" customClass="StatusView" customModule="Darky" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="76"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1qE-Oa-JK0">
-                    <rect key="frame" x="17" y="14" width="198" height="19"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="19" id="Vbf-pq-qL2"/>
-                    </constraints>
-                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="dFC-dj-MhL">
-                        <font key="font" metaFont="systemMedium" size="13"/>
+                <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Mi-Da-hdA">
+                    <rect key="frame" x="0.0" y="20" width="251" height="51"/>
+                    <subviews>
+                        <stackView distribution="fillEqually" orientation="horizontal" alignment="top" spacing="25" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wQE-4J-KwU">
+                            <rect key="frame" x="60" y="0.0" width="131" height="51"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KyQ-Sc-PvY">
+                                    <rect key="frame" x="0.0" y="28" width="53" height="23"/>
+                                    <buttonCell key="cell" type="roundTextured" title="LIGHT" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="LcK-ln-A49">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="activateDarkModeWithSender:" target="HhN-DY-IST" id="lS9-Z2-YVF"/>
+                                    </connections>
+                                </button>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="e5x-vp-obq">
+                                    <rect key="frame" x="78" y="28" width="53" height="23"/>
+                                    <buttonCell key="cell" type="roundTextured" title="DARK" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="66n-m9-5Jy">
+                                        <behavior key="behavior" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="activateDarkModeWithSender:" target="HhN-DY-IST" id="fUs-Rb-96K"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nWw-06-Yj4">
+                    <rect key="frame" x="94" y="26" width="63" height="11"/>
+                    <textFieldCell key="cell" alignment="center" title="(⌘+Ctrl+B)" drawsBackground="YES" id="7ZG-bs-w5j">
+                        <font key="font" metaFont="system" size="9"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="0.74942496830000005" green="0.28060209679999998" blue="0.22667015230000001" alpha="0.77999250856164382" colorSpace="custom" customColorSpace="displayP3"/>
                     </textFieldCell>
                 </textField>
-                <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rNn-A5-VGx" customClass="OGSwitch" customModule="OGSwitch">
-                    <rect key="frame" x="221" y="14" width="40" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="40" id="4kL-8n-Cl2"/>
-                        <constraint firstAttribute="height" constant="21" id="h8H-Rt-LLA"/>
-                    </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                            <color key="value" red="0.11862464120000001" green="0.6245203346" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="knobBackgroundColor">
-                            <color key="value" red="1" green="0.35968685550000001" blue="0.47282858129999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="disabledBorderColor">
-                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="inactiveBackgroundColor">
-                            <color key="value" red="0.11862464120000001" green="0.6245203346" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
-                            <color key="value" red="1" green="0.35968685550000001" blue="0.47282858129999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dac-2R-Q2N">
+                    <rect key="frame" x="18" y="2" width="215" height="18"/>
+                    <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="fAT-Tb-Qrb">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
                     <connections>
-                        <action selector="activateDarkModeWithSender:" target="HhN-DY-IST" id="LtB-hB-dF4"/>
+                        <action selector="removeAppFromLaunchWithSender:" target="HhN-DY-IST" id="uxc-ur-dqZ"/>
                     </connections>
-                </customView>
+                </button>
             </subviews>
             <constraints>
-                <constraint firstItem="rNn-A5-VGx" firstAttribute="leading" secondItem="1qE-Oa-JK0" secondAttribute="trailing" constant="8" symbolic="YES" id="6aS-gJ-0SS"/>
-                <constraint firstItem="1qE-Oa-JK0" firstAttribute="leading" secondItem="HhN-DY-IST" secondAttribute="leading" constant="19" id="6pN-be-Qpu"/>
-                <constraint firstItem="1qE-Oa-JK0" firstAttribute="top" secondItem="HhN-DY-IST" secondAttribute="top" constant="9" id="FrL-Wc-ItD"/>
-                <constraint firstItem="1qE-Oa-JK0" firstAttribute="bottom" secondItem="rNn-A5-VGx" secondAttribute="bottom" id="LzM-eP-J4n"/>
-                <constraint firstAttribute="trailing" secondItem="rNn-A5-VGx" secondAttribute="trailing" constant="20" id="lPq-rT-QvK"/>
+                <constraint firstItem="3Mi-Da-hdA" firstAttribute="top" secondItem="HhN-DY-IST" secondAttribute="top" constant="5" id="7Lq-Oo-gNQ"/>
+                <constraint firstAttribute="trailing" secondItem="3Mi-Da-hdA" secondAttribute="trailing" id="GY0-va-rm2"/>
+                <constraint firstAttribute="trailing" secondItem="nWw-06-Yj4" secondAttribute="trailing" constant="94" id="I12-sO-B57"/>
+                <constraint firstItem="nWw-06-Yj4" firstAttribute="centerX" secondItem="HhN-DY-IST" secondAttribute="centerX" id="QB1-bW-wVe"/>
+                <constraint firstAttribute="bottom" secondItem="3Mi-Da-hdA" secondAttribute="bottom" constant="20" id="T7A-hP-Y6b"/>
+                <constraint firstItem="nWw-06-Yj4" firstAttribute="leading" secondItem="HhN-DY-IST" secondAttribute="leading" constant="94" id="Ug2-fZ-J9R"/>
+                <constraint firstItem="dac-2R-Q2N" firstAttribute="top" secondItem="HhN-DY-IST" secondAttribute="bottom" constant="-18" id="c0i-yy-ufK"/>
+                <constraint firstAttribute="trailing" secondItem="dac-2R-Q2N" secondAttribute="trailing" constant="20" id="gY3-ZB-HOz"/>
+                <constraint firstItem="3Mi-Da-hdA" firstAttribute="leading" secondItem="HhN-DY-IST" secondAttribute="leading" id="hF5-fm-p4z"/>
+                <constraint firstItem="dac-2R-Q2N" firstAttribute="leading" secondItem="HhN-DY-IST" secondAttribute="leading" constant="20" id="hlS-gp-UHx"/>
+                <constraint firstItem="dac-2R-Q2N" firstAttribute="top" secondItem="nWw-06-Yj4" secondAttribute="bottom" constant="8" symbolic="YES" id="nkv-mu-x9A"/>
             </constraints>
             <connections>
+                <outlet property="darkModeOffButton" destination="KyQ-Sc-PvY" id="ag6-ow-eEs"/>
+                <outlet property="darkModeOnButton" destination="e5x-vp-obq" id="GoO-fK-8aK"/>
                 <outlet property="menu" destination="qZp-Ad-uDX" id="211-BK-y0T"/>
-                <outlet property="statusLabel" destination="1qE-Oa-JK0" id="Nmc-pn-G9X"/>
-                <outlet property="switchControl" destination="rNn-A5-VGx" id="jPB-Z0-cag"/>
+                <outlet property="startUpCheckbox" destination="dac-2R-Q2N" id="ITr-lb-WEq"/>
             </connections>
-            <point key="canvasLocation" x="-53.5" y="398"/>
+            <point key="canvasLocation" x="-94.5" y="430"/>
         </customView>
     </objects>
 </document>

@@ -6,8 +6,8 @@
   Copyright © 2018 Mohamed ARRADI. All rights reserved.
 */
 
-"activate_dark_mode" = "Dark Mode ON";
-"desactivate_dark_mode" = "Dark Mode OFF";
+"activate_dark_mode" = "DARK MODE";
+"activate_light_mode" = "LIGHT MODE";
 "enable_start_up_login" = "Start up when launch";
 "settings" = "Preferences...";
 "quit_app" = "Quit App";

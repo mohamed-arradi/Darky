@@ -9,38 +9,18 @@
 import Cocoa
 import Magnet
 
-enum VersionError: Error {
-    case invalidResponse, invalidBundleInfo
-}
-
-class StatusMenuController: NSObject, PreferencesWindowDelegate, NSAlertDelegate {
+class StatusMenuController: NSObject, NSAlertDelegate {
     
     @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var darkModeStatusView: StatusView!
     
-    let mac_app_store_distribution = true
-
-    var timer: Timer?
+    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     
     var statusMenuItem: NSMenuItem!
-    
-    lazy var preferencesWindow: PreferencesWindow = {
-        
-        let preference = PreferencesWindow()
-        preference.delegate = self
-        
-        return preference
-    }()
     
     lazy var aboutView: AboutWindow = {
         return AboutWindow()
     }()
-    
-    lazy var creditView: CreditsWindow = {
-        return CreditsWindow()
-    }()
-    
-    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     
     override func awakeFromNib() {
         
@@ -49,28 +29,20 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate, NSAlertDelegate
         icon?.isTemplate = true // best for dark mode
         statusItem.image = icon
         statusItem.menu = statusMenu
-        
-        statusMenu.item(at: 2)?.title = "settings".localized
-        statusMenu.item(at: 4)?.title = "about".localized
-        statusMenu.item(at: 6)?.title = "credits".localized
-        statusMenu.item(at: 8)?.title = "quit_app".localized
+
+        statusMenu.item(at: 2)?.title = "about".localized
+        statusMenu.item(at: 4)?.title = "quit_app".localized
         
         statusMenuItem = statusMenu.item(at: 0)
-        
         darkModeStatusView.statusMenu = statusMenu
-        
         statusMenuItem.view = darkModeStatusView
         
-        updateSettings()
+        darkModeStatusView.detectDarkMode()
         
         if let keyCombo = KeyCombo(keyCode: 11, carbonModifiers: 4352) {
             let hotKey = HotKey(identifier: "CommandControlB", keyCombo: keyCombo, target: self, action: #selector(changeDarkMode))
             hotKey.register()
         }
-    }
-    
-    @objc func updateSettings() {
-        darkModeStatusView.detectDarkMode()
     }
     
     @objc func changeDarkMode() {
@@ -79,24 +51,11 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate, NSAlertDelegate
     
     // MARK: - IBAction
     
-    @IBAction func preferencesClicked(_ sender: NSMenuItem) {
-        preferencesWindow.showWindow(nil)
-        DarkMode.toggle()
-    }
-    
     @IBAction func quitClicked(_ sender: NSMenuItem) {
         NSApplication.shared.terminate(self)
     }
     
     @IBAction func aboutAppClicked(_ sender: NSMenuItem) {
         aboutView.showWindow(nil)
-    }
-    
-    @IBAction func creditAppClicked(_ sender: NSMenuItem) {
-        creditView.showWindow(nil)
-    }
-    
-    func preferencesDidUpdate() {
-        updateSettings()
     }
 }

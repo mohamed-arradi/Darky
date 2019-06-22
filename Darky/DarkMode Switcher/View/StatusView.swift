@@ -8,38 +8,35 @@
 
 import Foundation
 import OGSwitch
+import LoginServiceKit
 
 class StatusView: NSView {
     
-    @IBOutlet weak var switchControl: OGSwitch!
-    @IBOutlet weak var statusLabel: NSTextField!
+    @IBOutlet weak var darkModeOnButton: NSButton!
+    @IBOutlet weak var darkModeOffButton: NSButton!
+    @IBOutlet weak var startUpCheckbox: NSButton!
     
     weak var statusMenu: NSMenu?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.darkModeOnButton.title = "activate_dark_mode".localized
+        self.darkModeOffButton.title = "activate_light_mode".localized
+        
         detectDarkMode()
+        
+        detectStartUpOption()
     }
     
     @objc func detectDarkMode() {
         
         guard let darkMode =  AppleScriptHelper.getValueFrom(scriptName: "darkmodeParam") else {
-            self.switchControl.isEnabled = false
-            self.switchControl.isHidden = true
-            self.statusLabel.isHidden = true
             return
         }
-            DispatchQueue.main.async {
-                
-                self.switchControl.isEnabled = true
-                self.switchControl.isHidden = false
-                self.statusLabel.isHidden = false
-                
-                let bool = darkMode.booleanValue
-                
-                self.switchControl.isOn = bool
-                self.statusLabel.stringValue = bool == true ? "activate_dark_mode".localized.appending(" (⌘+Ctrl+B)") : "desactivate_dark_mode".localized.appending(" (⌘+Ctrl+B)")
+        DispatchQueue.main.async {
+            self.darkModeOnButton.isHidden = darkMode.booleanValue
+            self.darkModeOffButton.isHidden = !darkMode.booleanValue
         }
     }
     
@@ -47,8 +44,29 @@ class StatusView: NSView {
         
         let _ = AppleScriptHelper.launchScript(scriptName: "darkmodeSwitcher")
         
-         self.detectDarkMode()
+        detectDarkMode()
         
         self.statusMenu?.cancelTracking()
+    }
+    
+    fileprivate func detectStartUpOption() {
+        
+        let isStartupOnLogin = LoginServiceKit.isExistLoginItems(at: Bundle.main.bundlePath)
+        
+        startUpCheckbox.state = isStartupOnLogin == true ? .on : .off
+        startUpCheckbox.title = "enable_start_up_login".localized
+    }
+    
+    @IBAction func removeAppFromLaunch(sender: Any) {
+        
+        let isStartupOnLogin = LoginServiceKit.isExistLoginItems(at: Bundle.main.bundlePath)
+        
+        if isStartupOnLogin == true {
+            LoginServiceKit.removeLoginItems(at: Bundle.main.bundlePath)
+        } else {
+            LoginServiceKit.addLoginItems(at: Bundle.main.bundlePath)
+        }
+        
+        detectStartUpOption()
     }
 }

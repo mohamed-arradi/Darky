@@ -39,23 +39,20 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="0.5" y="218"/>
+            <point key="canvasLocation" x="-95" y="275"/>
         </menu>
         <customView id="HhN-DY-IST" userLabel="DarkModeStatusView" customClass="StatusView" customModule="Darky" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="251" height="76"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Mi-Da-hdA">
-                    <rect key="frame" x="0.0" y="20" width="251" height="56"/>
+                    <rect key="frame" x="0.0" y="20" width="251" height="51"/>
                     <subviews>
-                        <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="zCg-hh-3Gv">
-                            <rect key="frame" x="78" y="53" width="96" height="5"/>
-                        </box>
                         <stackView distribution="fillEqually" orientation="horizontal" alignment="top" spacing="25" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wQE-4J-KwU">
-                            <rect key="frame" x="60" y="0.0" width="131" height="45"/>
+                            <rect key="frame" x="60" y="0.0" width="131" height="51"/>
                             <subviews>
                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KyQ-Sc-PvY">
-                                    <rect key="frame" x="0.0" y="22" width="53" height="23"/>
+                                    <rect key="frame" x="0.0" y="28" width="53" height="23"/>
                                     <buttonCell key="cell" type="roundTextured" title="LIGHT" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="LcK-ln-A49">
                                         <behavior key="behavior" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -65,7 +62,7 @@
                                     </connections>
                                 </button>
                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="e5x-vp-obq">
-                                    <rect key="frame" x="78" y="22" width="53" height="23"/>
+                                    <rect key="frame" x="78" y="28" width="53" height="23"/>
                                     <buttonCell key="cell" type="roundTextured" title="DARK" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="66n-m9-5Jy">
                                         <behavior key="behavior" lightByContents="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -87,10 +84,8 @@
                     </subviews>
                     <visibilityPriorities>
                         <integer value="1000"/>
-                        <integer value="1000"/>
                     </visibilityPriorities>
                     <customSpacing>
-                        <real value="3.4028234663852886e+38"/>
                         <real value="3.4028234663852886e+38"/>
                     </customSpacing>
                 </stackView>
@@ -114,7 +109,7 @@
                 </button>
             </subviews>
             <constraints>
-                <constraint firstItem="3Mi-Da-hdA" firstAttribute="top" secondItem="HhN-DY-IST" secondAttribute="top" id="7Lq-Oo-gNQ"/>
+                <constraint firstItem="3Mi-Da-hdA" firstAttribute="top" secondItem="HhN-DY-IST" secondAttribute="top" constant="5" id="7Lq-Oo-gNQ"/>
                 <constraint firstAttribute="trailing" secondItem="3Mi-Da-hdA" secondAttribute="trailing" id="GY0-va-rm2"/>
                 <constraint firstAttribute="trailing" secondItem="nWw-06-Yj4" secondAttribute="trailing" constant="94" id="I12-sO-B57"/>
                 <constraint firstItem="nWw-06-Yj4" firstAttribute="centerX" secondItem="HhN-DY-IST" secondAttribute="centerX" id="QB1-bW-wVe"/>

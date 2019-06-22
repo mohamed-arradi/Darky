@@ -14,14 +14,13 @@ class StatusMenuController: NSObject, NSAlertDelegate {
     @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var darkModeStatusView: StatusView!
     
-    var timer: Timer?
+    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+    
     var statusMenuItem: NSMenuItem!
     
     lazy var aboutView: AboutWindow = {
         return AboutWindow()
     }()
-    
-    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     
     override func awakeFromNib() {
         
@@ -38,16 +37,12 @@ class StatusMenuController: NSObject, NSAlertDelegate {
         darkModeStatusView.statusMenu = statusMenu
         statusMenuItem.view = darkModeStatusView
         
-        updateSettings()
+        darkModeStatusView.detectDarkMode()
         
         if let keyCombo = KeyCombo(keyCode: 11, carbonModifiers: 4352) {
             let hotKey = HotKey(identifier: "CommandControlB", keyCombo: keyCombo, target: self, action: #selector(changeDarkMode))
             hotKey.register()
         }
-    }
-    
-    @objc func updateSettings() {
-        darkModeStatusView.detectDarkMode()
     }
     
     @objc func changeDarkMode() {

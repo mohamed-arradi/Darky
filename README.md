@@ -20,7 +20,7 @@ This App cannot be allowed on the Mac App Store due to the necessary temporary e
 
 ## How to download directly the App ?
 
-Just download the App zip file here : https://github.com/mohamed-arradi/DarkModeSwitcher/tree/master/Release
+Just download the App zip file here : https://github.com/mohamed-arradi/Darky/releases
 
 ### Language handled
 
@@ -34,7 +34,7 @@ Just download the App zip file here : https://github.com/mohamed-arradi/DarkMode
 
 *Dark Mode On*
 
-![Screenshot](images/DarkModeOn.jpg)
+![Screenshot](images/DarkModeOnZoomed.png)
 
 ### Contributing
 

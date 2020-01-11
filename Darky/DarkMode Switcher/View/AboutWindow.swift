@@ -16,7 +16,7 @@ class AboutWindow: NSWindowController {
     @IBOutlet weak var appBuildVersionLabel: NSTextField!
     
     override var windowNibName: NSNib.Name? {
-        return NSNib.Name(rawValue: "AboutWindow")
+        return "AboutWindow"
     }
     
     override func windowDidLoad() {

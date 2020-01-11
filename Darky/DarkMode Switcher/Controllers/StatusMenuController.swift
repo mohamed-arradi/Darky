@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import Magnet
+import HotKey
 
 class StatusMenuController: NSObject, NSAlertDelegate {
     
@@ -15,8 +15,9 @@ class StatusMenuController: NSObject, NSAlertDelegate {
     @IBOutlet weak var darkModeStatusView: StatusView!
     
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-    
     var statusMenuItem: NSMenuItem!
+    
+    fileprivate var hotKey: HotKey!
     
     lazy var aboutView: AboutWindow = {
         return AboutWindow()
@@ -25,7 +26,7 @@ class StatusMenuController: NSObject, NSAlertDelegate {
     override func awakeFromNib() {
         
         statusItem.menu = statusMenu
-        let icon = NSImage(named: NSImage.Name(rawValue: "StatusIcon"))
+        let icon = NSImage(named: "StatusIcon")
         icon?.isTemplate = true // best for dark mode
         statusItem.image = icon
         statusItem.menu = statusMenu
@@ -38,10 +39,11 @@ class StatusMenuController: NSObject, NSAlertDelegate {
         statusMenuItem.view = darkModeStatusView
         
         darkModeStatusView.detectDarkMode()
+
+        hotKey = HotKey(key: .d, modifiers: [.command])
         
-        if let keyCombo = KeyCombo(keyCode: 11, carbonModifiers: 4352) {
-            let hotKey = HotKey(identifier: "CommandControlB", keyCombo: keyCombo, target: self, action: #selector(changeDarkMode))
-            hotKey.register()
+        hotKey.keyDownHandler = {
+            self.changeDarkMode()
         }
     }
     

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import OGSwitch
 import LoginServiceKit
 
 class StatusView: NSView {

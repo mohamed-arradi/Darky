@@ -7,8 +7,7 @@ target 'DarkMode Switcher' do
 
   # Pods for DarkMode Switcher
 
-  pod 'OGSwitch'
   pod 'LoginServiceKit', :git => 'https://github.com/Clipy/LoginServiceKit.git'
-  pod 'Magnet'
+  pod 'HotKey'
   
 end

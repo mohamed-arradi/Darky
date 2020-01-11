@@ -1,10 +1,10 @@
-# Darky
+# Darky [![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://swift.org/)
 
 ![Image of DarkModeSwitcher](https://github.com/mohamed-arradi/DarkModeSwitcher/blob/master/images/appIcon.png)
 
 A small Mac OS App that allow you on Mac OS Mojave to switch between Dark Mode and Light Mode directly from a shortcut or via the status menu bar.
 
-**Current Release Version: 1.0
+**Current Release Version: 1.1
 
 ## Why this App can be useful ?
 
@@ -14,7 +14,7 @@ This is why I build this tiny status bar app.
 
 ## Getting Started
 
-This is a MacOSX App build with xCode using Swift 4.2 and temporary exceptions in order to handle System Events and Preferences panels events
+This is a MacOSX App build with xCode using Swift 5.0 and temporary exceptions in order to handle System Events and Preferences panels events
 
 This App cannot be allowed on the Mac App Store due to the necessary temporary exceptions required. (Except if you manage to bribe some Apple Reviewers :))
 
@@ -30,15 +30,11 @@ Just download the App zip file here : https://github.com/mohamed-arradi/DarkMode
 
 *Dark Mode Off*
 
-![Screenshot](images/DarkModeOff.jpg)
-
 ![Screenshot](images/DarkModeOffZoomed.png)
 
 *Dark Mode On*
 
 ![Screenshot](images/DarkModeOn.jpg)
-
-![Screenshot](images/DarkModeOnZoomed.png)
 
 ### Contributing
 
@@ -50,19 +46,20 @@ If you want to contribute to improve it, it will be with pleasure !
 
 ### HISTORY
 
-** 1.0
+**1.0.1**
 
- ** Improving UI
- ** Added Missing Permissions for Mac OS Mojave
- ** Implemented keyboard shortcut 
+ * Thanks to community, the shortcut has been done simple (just ⌘+D) and you are set
+ * Removed unecessary library dependencies
 
-** 0.1.0 
+**1.0**
 
- * Implemented Dark Mode Switch
+ * Improving UI
+ * Added Missing Permissions for Mac OS Mojave
+ * Implemented keyboard shortcut 
 
 ### Image Credits
 
-Icons:
+**Icons Credits**:
 
 - https://www.flaticon.com/authors/epiccoders (www.flaticon.com)
 

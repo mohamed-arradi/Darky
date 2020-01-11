@@ -31,6 +31,7 @@
 		A5482CCD43C505E6B7D3E28C /* Pods_DarkMode_Switcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkMode_Switcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03CEF4083CA4748BFD88058 /* Pods-DarkMode Switcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkMode Switcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-DarkMode Switcher/Pods-DarkMode Switcher.release.xcconfig"; sourceTree = "<group>"; };
 		E9984FB7386476D4E03AC95F /* Pods-DarkMode Switcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkMode Switcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DarkMode Switcher/Pods-DarkMode Switcher.debug.xcconfig"; sourceTree = "<group>"; };
+		EB2F866123CA1B0E005C0FC0 /* DarkyRelease.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = DarkyRelease.entitlements; sourceTree = "<group>"; };
 		EB84493F20CD0AF10031C2EE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		EBBB313120CE40E400780063 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		EBBB313320CE415A00780063 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 		EBDAAE7120CBD48A00563F55 /* DarkMode Switcher */ = {
 			isa = PBXGroup;
 			children = (
+				EB2F866123CA1B0E005C0FC0 /* DarkyRelease.entitlements */,
 				EBD1A9CA22B5107F0026F1C3 /* DarkMode Switcher.entitlements */,
 				EBDC1534212974DC00D22C2E /* Model */,
 				EBBB313920CE41A200780063 /* View */,
@@ -486,7 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "DarkMode Switcher/DarkMode Switcher.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "DarkMode Switcher/DarkyRelease.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

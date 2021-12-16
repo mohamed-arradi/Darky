@@ -7,7 +7,7 @@
  */
 
 "activate_dark_mode" = "Dark Mode ON";
-"desactivate_dark_mode" = "Dark Mode OFF";
+"activate_light_mode" = "Dark Mode OFF";
 "enable_start_up_login" = "Start up when launch";
 "settings" = "Preferences...";
 "quit_app" = "Quit App";

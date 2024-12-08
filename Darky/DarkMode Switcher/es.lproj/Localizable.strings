@@ -1,0 +1,21 @@
+/* 
+  Localizables.strings
+  DarkMode Switcher
+
+  Created by Mohamed Arradi on 6/9/18.
+  Copyright © 2018 Mohamed ARRADI. All rights reserved.
+*/
+
+"activate_dark_mode" = "MODO OSCURO";
+"activate_light_mode" = "MODO CLARO";
+"enable_start_up_login" = "Iniciar al abrir";
+"settings" = "Preferencias...";
+"quit_app" = "Salir de la aplicación";
+"about" = "Acerca de Darky";
+"cancel" = "Cancelar";
+"ok" = "Aceptar";
+"product_is_up_to_date" = "Tu aplicación está actualizada";
+"credits" = "Créditos";
+"credit_description" = "Ícono principal de la aplicación: %@.\n \nÍcono de la barra de estado: %@";
+"made_by" = "Creado por";
+"accept_installation_folder" = "Permitir";

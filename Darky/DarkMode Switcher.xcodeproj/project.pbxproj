@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,7 @@
 		19C71EB515BE5B30C5E17D4E /* Pods_DarkModeLauncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkModeLauncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5482CCD43C505E6B7D3E28C /* Pods_DarkMode_Switcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkMode_Switcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03CEF4083CA4748BFD88058 /* Pods-DarkMode Switcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkMode Switcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-DarkMode Switcher/Pods-DarkMode Switcher.release.xcconfig"; sourceTree = "<group>"; };
+		D982636B2D05EF0400CA8ACA /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E9984FB7386476D4E03AC95F /* Pods-DarkMode Switcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkMode Switcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DarkMode Switcher/Pods-DarkMode Switcher.debug.xcconfig"; sourceTree = "<group>"; };
 		EB2F866123CA1B0E005C0FC0 /* DarkyRelease.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = DarkyRelease.entitlements; sourceTree = "<group>"; };
 		EB84493F20CD0AF10031C2EE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -232,9 +233,10 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				fr,
 				"en-GB",
+				Base,
+				es,
 			);
 			mainGroup = EBDAAE6620CBD48900563F55;
 			productRefGroup = EBDAAE7020CBD48A00563F55 /* Products */;
@@ -325,6 +327,7 @@
 				EBDAAE9220CC390900563F55 /* en */,
 				EBDAAE9420CC398400563F55 /* fr */,
 				EBBB313E20CE738A00780063 /* en-GB */,
+				D982636B2D05EF0400CA8ACA /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -470,8 +473,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.1.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DarkMode-Switcher";
 				PRODUCT_NAME = Darky;
 				PROVISIONING_PROFILE = "";
@@ -503,8 +506,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.1.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DarkMode-Switcher";
 				PRODUCT_NAME = Darky;
 				PROVISIONING_PROFILE = "";

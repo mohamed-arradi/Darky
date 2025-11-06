@@ -24,7 +24,6 @@ class StatusView: NSView {
         self.darkModeOffButton.title = "activate_light_mode".localized
         
         detectDarkMode()
-        
         detectStartUpOption()
     }
     
